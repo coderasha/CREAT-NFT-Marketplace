@@ -1,0 +1,1017 @@
+{
+  "contractName": "INafterRoyaltyRegistry",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenCreator",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTokenRoyaltyPercentage",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculateRoyaltyFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_percentage",
+          "type": "uint8"
+        }
+      ],
+      "name": "setPercentageForTokenRoyalty",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"calculateRoyaltyFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"getTokenRoyaltyPercentage\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"_percentage\",\"type\":\"uint8\"}],\"name\":\"setPercentageForTokenRoyalty\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenCreator\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"calculateRoyaltyFee(uint256,uint256)\":{\"details\":\"Utililty function to calculate the royalty fee for a token.\",\"params\":{\"_amount\":\"uint256 wei amount.\",\"_tokenId\":\"uint256 token ID.\"},\"returns\":{\"_0\":\"uint256 wei fee.\"}},\"getTokenRoyaltyPercentage(uint256)\":{\"details\":\"Get the royalty fee percentage for a specific ERC1155 contract.\",\"params\":{\"_tokenId\":\"uint256 token ID.\"},\"returns\":{\"_0\":\"uint8 wei royalty fee.\"}},\"setPercentageForTokenRoyalty(uint256,uint8)\":{\"details\":\"Sets the royalty percentage set for an Nafter token Requirements: - `_percentage` must be <= 100. - only the owner of this contract or the creator can call this method.\",\"params\":{\"_percentage\":\"uint8 wei royalty fee.\",\"_tokenId\":\"uint256 token ID.\"}},\"tokenCreator(uint256)\":{\"details\":\"Gets the creator of the token\",\"params\":{\"_tokenId\":\"uint256 ID of the token\"},\"returns\":{\"_0\":\"address of the creator\"}}},\"title\":\"IERC1155CreatorRoyalty Token level royalty interface.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/Projects/Nafter/contracts/INafterRoyaltyRegistry.sol\":\"INafterRoyaltyRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/Projects/Nafter/contracts/IERC1155TokenCreator.sol\":{\"keccak256\":\"0xec213895536f99f25218e5651c0f3973d7b8d941d2bf4a148142082c3f5c91b1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e81456b9f0b8249b8d16565ebceb0b3853e81a4fe0ff95a1733e9e728ed51b5f\",\"dweb:/ipfs/QmTLdqi1HtV7dxyhAyUJJRwNDyvGAfbYReE3gEHvt623Ca\"]},\"/home/Projects/Nafter/contracts/INafterRoyaltyRegistry.sol\":{\"keccak256\":\"0xf1dd9e5699fde545373853e0e07883fb7d85dbcee9f65bb746da50b66e9fccc0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://95210a8379c8e70353fcbb2c605b0f0f87cfec354a0abf537dec4e4dd0da1057\",\"dweb:/ipfs/QmcH5NqCQnDh7Jo6Q16Pi7Rb8p6wV5RCKbXH7APoN6c3xk\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.6.12;\n\nimport \"./IERC1155TokenCreator.sol\";\n\n/**\n * @title IERC1155CreatorRoyalty Token level royalty interface.\n */\ninterface INafterRoyaltyRegistry is IERC1155TokenCreator {\n    /**\n     * @dev Get the royalty fee percentage for a specific ERC1155 contract.\n     * @param _tokenId uint256 token ID.\n     * @return uint8 wei royalty fee.\n     */\n    function getTokenRoyaltyPercentage(\n        uint256 _tokenId\n    ) external view returns (uint8);\n\n    /**\n     * @dev Utililty function to calculate the royalty fee for a token.\n     * @param _tokenId uint256 token ID.\n     * @param _amount uint256 wei amount.\n     * @return uint256 wei fee.\n     */\n    function calculateRoyaltyFee(\n        uint256 _tokenId,\n        uint256 _amount\n    ) external view returns (uint256);\n\n    /**\n     * @dev Sets the royalty percentage set for an Nafter token\n     * Requirements:\n\n     * - `_percentage` must be <= 100.\n     * - only the owner of this contract or the creator can call this method.\n     * @param _tokenId uint256 token ID.\n     * @param _percentage uint8 wei royalty fee.\n     */\n    function setPercentageForTokenRoyalty(\n        uint256 _tokenId,\n        uint8 _percentage\n    ) external returns (uint8);\n}",
+  "sourcePath": "/home/Projects/Nafter/contracts/INafterRoyaltyRegistry.sol",
+  "ast": {
+    "absolutePath": "/home/Projects/Nafter/contracts/INafterRoyaltyRegistry.sol",
+    "exportedSymbols": {
+      "INafterRoyaltyRegistry": [
+        236
+      ]
+    },
+    "id": 237,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 203,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:4"
+      },
+      {
+        "absolutePath": "/home/Projects/Nafter/contracts/IERC1155TokenCreator.sol",
+        "file": "./IERC1155TokenCreator.sol",
+        "id": 204,
+        "nodeType": "ImportDirective",
+        "scope": 237,
+        "sourceUnit": 12,
+        "src": "58:36:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 206,
+              "name": "IERC1155TokenCreator",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 11,
+              "src": "204:20:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC1155TokenCreator_$11",
+                "typeString": "contract IERC1155TokenCreator"
+              }
+            },
+            "id": 207,
+            "nodeType": "InheritanceSpecifier",
+            "src": "204:20:4"
+          }
+        ],
+        "contractDependencies": [
+          11
+        ],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 205,
+          "nodeType": "StructuredDocumentation",
+          "src": "96:71:4",
+          "text": " @title IERC1155CreatorRoyalty Token level royalty interface."
+        },
+        "fullyImplemented": false,
+        "id": 236,
+        "linearizedBaseContracts": [
+          236,
+          11
+        ],
+        "name": "INafterRoyaltyRegistry",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 208,
+              "nodeType": "StructuredDocumentation",
+              "src": "231:166:4",
+              "text": " @dev Get the royalty fee percentage for a specific ERC1155 contract.\n @param _tokenId uint256 token ID.\n @return uint8 wei royalty fee."
+            },
+            "functionSelector": "dfe42dc2",
+            "id": 215,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTokenRoyaltyPercentage",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 211,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 210,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 215,
+                  "src": "446:16:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 209,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "446:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "436:32:4"
+            },
+            "returnParameters": {
+              "id": 214,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 213,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 215,
+                  "src": "492:5:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 212,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "492:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "491:7:4"
+            },
+            "scope": 236,
+            "src": "402:97:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 216,
+              "nodeType": "StructuredDocumentation",
+              "src": "505:198:4",
+              "text": " @dev Utililty function to calculate the royalty fee for a token.\n @param _tokenId uint256 token ID.\n @param _amount uint256 wei amount.\n @return uint256 wei fee."
+            },
+            "functionSelector": "fb15b9d6",
+            "id": 225,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calculateRoyaltyFee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 221,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 218,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 225,
+                  "src": "746:16:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 217,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "746:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 220,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 225,
+                  "src": "772:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 219,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "772:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "736:57:4"
+            },
+            "returnParameters": {
+              "id": 224,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 223,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 225,
+                  "src": "817:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 222,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "817:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "816:9:4"
+            },
+            "scope": 236,
+            "src": "708:118:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 226,
+              "nodeType": "StructuredDocumentation",
+              "src": "832:304:4",
+              "text": " @dev Sets the royalty percentage set for an Nafter token\n Requirements:\n - `_percentage` must be <= 100.\n - only the owner of this contract or the creator can call this method.\n @param _tokenId uint256 token ID.\n @param _percentage uint8 wei royalty fee."
+            },
+            "functionSelector": "318856f2",
+            "id": 235,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setPercentageForTokenRoyalty",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 231,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 228,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 235,
+                  "src": "1188:16:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 227,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1188:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 230,
+                  "mutability": "mutable",
+                  "name": "_percentage",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 235,
+                  "src": "1214:17:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 229,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1214:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1178:59:4"
+            },
+            "returnParameters": {
+              "id": 234,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 233,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 235,
+                  "src": "1256:5:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 232,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1256:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1255:7:4"
+            },
+            "scope": 236,
+            "src": "1141:122:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 237,
+        "src": "168:1097:4"
+      }
+    ],
+    "src": "33:1232:4"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/Projects/Nafter/contracts/INafterRoyaltyRegistry.sol",
+      "exportedSymbols": {
+        "INafterRoyaltyRegistry": [
+          236
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 203,
+        "name": "PragmaDirective",
+        "src": "33:23:4"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 12,
+          "absolutePath": "/home/Projects/Nafter/contracts/IERC1155TokenCreator.sol",
+          "file": "./IERC1155TokenCreator.sol",
+          "scope": 237,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 204,
+        "name": "ImportDirective",
+        "src": "58:36:4"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            11
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            236,
+            11
+          ],
+          "name": "INafterRoyaltyRegistry",
+          "scope": 237
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @title IERC1155CreatorRoyalty Token level royalty interface."
+            },
+            "id": 205,
+            "name": "StructuredDocumentation",
+            "src": "96:71:4"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IERC1155TokenCreator",
+                  "referencedDeclaration": 11,
+                  "type": "contract IERC1155TokenCreator"
+                },
+                "id": 206,
+                "name": "UserDefinedTypeName",
+                "src": "204:20:4"
+              }
+            ],
+            "id": 207,
+            "name": "InheritanceSpecifier",
+            "src": "204:20:4"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "dfe42dc2",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getTokenRoyaltyPercentage",
+              "overrides": null,
+              "scope": 236,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Get the royalty fee percentage for a specific ERC1155 contract.\n @param _tokenId uint256 token ID.\n @return uint8 wei royalty fee."
+                },
+                "id": 208,
+                "name": "StructuredDocumentation",
+                "src": "231:166:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_tokenId",
+                      "overrides": null,
+                      "scope": 215,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 209,
+                        "name": "ElementaryTypeName",
+                        "src": "446:7:4"
+                      }
+                    ],
+                    "id": 210,
+                    "name": "VariableDeclaration",
+                    "src": "446:16:4"
+                  }
+                ],
+                "id": 211,
+                "name": "ParameterList",
+                "src": "436:32:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 215,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 212,
+                        "name": "ElementaryTypeName",
+                        "src": "492:5:4"
+                      }
+                    ],
+                    "id": 213,
+                    "name": "VariableDeclaration",
+                    "src": "492:5:4"
+                  }
+                ],
+                "id": 214,
+                "name": "ParameterList",
+                "src": "491:7:4"
+              }
+            ],
+            "id": 215,
+            "name": "FunctionDefinition",
+            "src": "402:97:4"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "fb15b9d6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "calculateRoyaltyFee",
+              "overrides": null,
+              "scope": 236,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Utililty function to calculate the royalty fee for a token.\n @param _tokenId uint256 token ID.\n @param _amount uint256 wei amount.\n @return uint256 wei fee."
+                },
+                "id": 216,
+                "name": "StructuredDocumentation",
+                "src": "505:198:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_tokenId",
+                      "overrides": null,
+                      "scope": 225,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 217,
+                        "name": "ElementaryTypeName",
+                        "src": "746:7:4"
+                      }
+                    ],
+                    "id": 218,
+                    "name": "VariableDeclaration",
+                    "src": "746:16:4"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_amount",
+                      "overrides": null,
+                      "scope": 225,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 219,
+                        "name": "ElementaryTypeName",
+                        "src": "772:7:4"
+                      }
+                    ],
+                    "id": 220,
+                    "name": "VariableDeclaration",
+                    "src": "772:15:4"
+                  }
+                ],
+                "id": 221,
+                "name": "ParameterList",
+                "src": "736:57:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 225,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 222,
+                        "name": "ElementaryTypeName",
+                        "src": "817:7:4"
+                      }
+                    ],
+                    "id": 223,
+                    "name": "VariableDeclaration",
+                    "src": "817:7:4"
+                  }
+                ],
+                "id": 224,
+                "name": "ParameterList",
+                "src": "816:9:4"
+              }
+            ],
+            "id": 225,
+            "name": "FunctionDefinition",
+            "src": "708:118:4"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "318856f2",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setPercentageForTokenRoyalty",
+              "overrides": null,
+              "scope": 236,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Sets the royalty percentage set for an Nafter token\n Requirements:\n - `_percentage` must be <= 100.\n - only the owner of this contract or the creator can call this method.\n @param _tokenId uint256 token ID.\n @param _percentage uint8 wei royalty fee."
+                },
+                "id": 226,
+                "name": "StructuredDocumentation",
+                "src": "832:304:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_tokenId",
+                      "overrides": null,
+                      "scope": 235,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 227,
+                        "name": "ElementaryTypeName",
+                        "src": "1188:7:4"
+                      }
+                    ],
+                    "id": 228,
+                    "name": "VariableDeclaration",
+                    "src": "1188:16:4"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_percentage",
+                      "overrides": null,
+                      "scope": 235,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 229,
+                        "name": "ElementaryTypeName",
+                        "src": "1214:5:4"
+                      }
+                    ],
+                    "id": 230,
+                    "name": "VariableDeclaration",
+                    "src": "1214:17:4"
+                  }
+                ],
+                "id": 231,
+                "name": "ParameterList",
+                "src": "1178:59:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 235,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 232,
+                        "name": "ElementaryTypeName",
+                        "src": "1256:5:4"
+                      }
+                    ],
+                    "id": 233,
+                    "name": "VariableDeclaration",
+                    "src": "1256:5:4"
+                  }
+                ],
+                "id": 234,
+                "name": "ParameterList",
+                "src": "1255:7:4"
+              }
+            ],
+            "id": 235,
+            "name": "FunctionDefinition",
+            "src": "1141:122:4"
+          }
+        ],
+        "id": 236,
+        "name": "ContractDefinition",
+        "src": "168:1097:4"
+      }
+    ],
+    "id": 237,
+    "name": "SourceUnit",
+    "src": "33:1232:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-09-28T22:00:26.133Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "calculateRoyaltyFee(uint256,uint256)": {
+        "details": "Utililty function to calculate the royalty fee for a token.",
+        "params": {
+          "_amount": "uint256 wei amount.",
+          "_tokenId": "uint256 token ID."
+        },
+        "returns": {
+          "_0": "uint256 wei fee."
+        }
+      },
+      "getTokenRoyaltyPercentage(uint256)": {
+        "details": "Get the royalty fee percentage for a specific ERC1155 contract.",
+        "params": {
+          "_tokenId": "uint256 token ID."
+        },
+        "returns": {
+          "_0": "uint8 wei royalty fee."
+        }
+      },
+      "setPercentageForTokenRoyalty(uint256,uint8)": {
+        "details": "Sets the royalty percentage set for an Nafter token Requirements: - `_percentage` must be <= 100. - only the owner of this contract or the creator can call this method.",
+        "params": {
+          "_percentage": "uint8 wei royalty fee.",
+          "_tokenId": "uint256 token ID."
+        }
+      },
+      "tokenCreator(uint256)": {
+        "details": "Gets the creator of the token",
+        "params": {
+          "_tokenId": "uint256 ID of the token"
+        },
+        "returns": {
+          "_0": "address of the creator"
+        }
+      }
+    },
+    "title": "IERC1155CreatorRoyalty Token level royalty interface.",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
