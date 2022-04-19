@@ -9,7 +9,7 @@ interface ICreatMarketAuction {
      * @param _amount uint256 wei value that the item is for sale
      */
     function setSalePrice(
-        
+        uint256 _tokenId,
         uint256 _amount,
         address _owner
     ) external;
