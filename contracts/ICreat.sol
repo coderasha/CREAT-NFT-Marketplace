@@ -13,7 +13,10 @@ interface ICreat {
      * @param _tokenId uint256 ID of the token
      * @return address of the creator
      */
- 
+    function creatorOfToken(uint256 _tokenId)
+    external
+    view
+    returns (address payable);
 
     /**
      * @dev Gets the Service Fee
